@@ -1,0 +1,93 @@
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    width: 100vw;
+}
+
+nav {
+    width: 100vw;
+    background-color: #D6EFFF;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    margin: 0 2vw;
+}
+
+li {
+    list-style-type: none;
+    margin: 0 2vw;
+    font-size: 3vh;
+}
+a{
+    text-decoration: none;
+    
+    /*below I changed the color*/
+    color: black;
+    /*I added some padding*/
+    padding: 2vw;
+    /*also changed the font family but that's totally irrelevant*/
+    font-family: monospace;
+  }
+  a:hover{
+    background-color: #C6E9FF;
+  }
+
+  /*change the layout of the navigation bar for all the screens 
+that have a width less or equal than 500px*/
+
+@media only screen and (max-width: 500px) {
+    /*shows elements in a column*/
+    ul{
+      flex-direction: column;
+    }
+    li{
+      margin: 0;
+    }
+    a{
+      display: block;
+    }
+  }
+
+button{
+    display: none;
+  }
+
+  @media only screen and (max-width: 500px) {
+    
+   button{
+     display: block;
+     padding: 2vw;
+     font-size: 3vh;
+     background-color: #AFE0FF;
+     border: none;
+     outline: none;
+     cursor: pointer;
+   }
+  }
+  button{
+    display: block;
+    cursor: pointer;
+    align-self: flex-start;
+  } 
